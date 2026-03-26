@@ -1,6 +1,6 @@
 # HRMSAttendanceManagementSystem
 Built a full HRMS from scratch. No tutorials. No shortcuts. Just code.   Employee management  Real-time check-in &amp; check-out  Auto Late detection after 10:00 AM  Live dashboard with today's stats  Clean, modern UI - built with Spring Boot + Thymeleaf  This isn't a clone. This isn't a course project. 
-# 🏢 HRMS — HR Management System
+# 🏢 HRMS -HR Management System
 
 A full-stack **HR Management System** built with **Java Spring Boot**, **MySQL**, and **Thymeleaf**. Manage employees, track daily attendance, auto-detect late arrivals, and monitor everything from a live dashboard.
 
@@ -12,11 +12,11 @@ A full-stack **HR Management System** built with **Java Spring Boot**, **MySQL**
 - Add employees with name, email, and department
 - View all employees in a clean, modern table
 - Auto-generated avatar initials from employee name
-- Delete any employee — their attendance records are automatically removed too
+- Delete any employee -their attendance records are automatically removed too
 
 ### 🕐 Attendance System
-- One-click **Check In** — records exact timestamp
-- One-click **Check Out** — tracks departure time
+- One-click **Check In** records exact timestamp
+- One-click **Check Out** -tracks departure time
 - Prevents duplicate check-in on the same day
 - Prevents check-out without a prior check-in
 - Employee name saved directly on every attendance record
@@ -24,11 +24,11 @@ A full-stack **HR Management System** built with **Java Spring Boot**, **MySQL**
 ### ⚡ Auto Late Detection
 - Office timing: **9:45 AM**
 - System automatically marks **"Late"** if check-in is after **10:00 AM**
-- No manual work needed — fully automatic
+- No manual work needed -fully automatic
 - Color-coded status pills:
-  - 🟢 **Present** — checked in on time
-  - 🟡 **Late** — checked in after 10:00 AM
-  - 🔴 **Absent** — no check-in recorded
+  - 🟢 **Present** -checked in on time
+  - 🟡 **Late** -checked in after 10:00 AM
+  - 🔴 **Absent** -no check-in recorded
 
 ### 📊 Live Dashboard
 - Total employees registered
@@ -50,7 +50,7 @@ A full-stack **HR Management System** built with **Java Spring Boot**, **MySQL**
 - Active navigation highlighting on every page
 - Empty state screens when no data exists
 - Confirm popups before any delete action
-- Inline error messages — no crashes
+- Inline error messages -no crashes
 
 ---
 
@@ -109,13 +109,13 @@ Make sure you have these installed:
 - Maven
 - MySQL 8+
 
-### Step 1 — Clone the repository
+### Step 1 -Clone the repository
 ```bash
 git clone https://github.com/your-username/HRMS.git
 cd HRMS/attendance
 ```
 
-### Step 2 — Configure MySQL
+### Step 2 -Configure MySQL
 
 Open `src/main/resources/application.properties` and update your database credentials:
 
@@ -127,12 +127,12 @@ spring.datasource.password=your_password_here
 
 > The database `attendance_system` will be **created automatically** on first run.
 
-### Step 3 — Run the application
+### Step 3 -Run the application
 ```bash
 ./mvnw spring-boot:run
 ```
 
-### Step 4 — Open in browser
+### Step 4 -Open in browser
 ```
 http://localhost:8080
 ```
@@ -143,7 +143,7 @@ http://localhost:8080
 
 | Page | URL | Description |
 |---|---|---|
-| Dashboard | `/dashboard` | Live stats — employees, present, late, monthly |
+| Dashboard | `/dashboard` | Live stats -employees, present, late, monthly |
 | Employees | `/employees` | View and manage all employees |
 | Add Employee | `/employees/new` | Register a new employee |
 | Mark Attendance | `/attendance/form` | Check in or check out |
