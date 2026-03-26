@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Attendance Form</title>
+</head>
+<body>
+<h2>Mark Attendance</h2>
+
+<div th:if="${error}" style="color:red;">
+    <p th:text="${error}"></p>
+</div>
+
+<h3>Check In</h3>
+<form th:action="@{/attendance/checkin}" method="post">
+    <label for="empIn">Select Employee:</label>
+    <select id="empIn" name="employeeId">
+        <option th:each="emp : ${employees}"
+                th:value="${emp.id}"
+                th:text="${emp.name}"></option>
+    </select>
+    <br><br>
+    <button type="submit">Check In</button>
+</form>
+
+<h3>Check Out</h3>
+<form th:action="@{/attendance/checkout}" method="post">
+    <label for="empOut">Select Employee:</label>
+    <select id="empOut" name="employeeId">
+        <option th:each="emp : ${employees}"
+                th:value="${emp.id}"
+                th:text="${emp.name}"></option>
+    </select>
+    <br><br>
+    <button type="submit">Check Out</button>
+</form>
+
+<br>
+<p><a th:href="@{/attendance/list}">View Attendance List</a> | <a th:href="@{/employees}">Back to Employees</a></p>
+</body>
+</html>

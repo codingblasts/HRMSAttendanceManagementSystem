@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Attendance</title>
+</head>
+
+<body>
+
+<h2>Attendance List</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Employee ID</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+
+<tr th:each="att : ${attendanceList}">
+<td th:text="${att.id}"></td>
+<td th:text="${att.employeeId}"></td>
+<td th:text="${att.date}"></td>
+<td th:text="${att.status}"></td>
+</tr>
+
+</table>
+
+</body>
+</html>
